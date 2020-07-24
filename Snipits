@@ -1,0 +1,2 @@
+Comma Seperated Group
+= Table.Group(#"Changed Type1", {"Stock Code"}, {{"SOH", each List.Sum([SOH]), type number}, {"Bin Codes", each Text.Combine(List.Distinct([Bin Code]),", "), type text}})
